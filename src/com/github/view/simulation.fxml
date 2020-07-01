@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Button?>
+<AnchorPane prefHeight="640.0" prefWidth="960.0" stylesheets="@../../../resources/style/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.controller.Simulation">
+   <children>
+      <TabPane prefHeight="640.0" prefWidth="960.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="CrownLand Station">
+            <content>
+              <AnchorPane id="StationAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="960.0">
+                     <children>
+                        <Canvas fx:id="canvas_Station_1" height="640.0" width="960.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="CrownLand City">
+            <content>
+              <AnchorPane id="CityAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Canvas fx:id="canvas_City_1" height="640.0" width="960.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Westeros Region">
+               <content>
+                  <AnchorPane id="RegionAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Canvas fx:id="canvas_Region_1" height="640.0" width="960.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+    <Button id="exitLoginButton" fx:id="signOutButton" layoutX="934.0" layoutY="1.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" />
+</AnchorPane>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Tab fx:id="viewProfileTab" style="-fx-background-radius: 20;" text="View Profile" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.controller.ViewProfile">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0">
+         <children>
+            <Pane opacity="0.8" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #F9F2DE; -fx-background-radius: 6px;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <VBox prefHeight="472.0" prefWidth="138.0">
+                           <children>
+                              <Label text="User Name">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="First Name">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="27.0" text="Last Name">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="29.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="44.0" text="E-mail">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="29.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="61.0" text="Phone Number">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="27.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="78.0" text="Role">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="28.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="New Password">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Confirm Password">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Created on">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="textFieldsWrapper" prefHeight="462.0" prefWidth="347.0">
+                           <children>
+                              <JFXTextField fx:id="userNameTextField" disable="true" editable="false" focusColor="#641c24" labelFloat="true" unFocusColor="#641c24">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="firstNameTextField" disable="true" editable="false" focusColor="#641c24" labelFloat="true" unFocusColor="#641c24">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="lastNameTextField" disable="true" editable="false" focusColor="#641c24" labelFloat="true" unFocusColor="#641c24">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="emailTextField" disable="true" editable="false" focusColor="#641c24" labelFloat="true" unFocusColor="#641c24">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="phoneNbrTextField" disable="true" editable="false" focusColor="#641c24" labelFloat="true" unFocusColor="#641c24">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="roleTextField" disable="true" editable="false" focusColor="#641c24" labelFloat="true" unFocusColor="#641c24">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXPasswordField fx:id="newPasswordPF" disable="true" editable="false" focusColor="#641c24" labelFloat="true" unFocusColor="#641c24">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXPasswordField>
+                              <JFXPasswordField fx:id="confirmPasswordPF" disable="true" editable="false" focusColor="#641c24" labelFloat="true" unFocusColor="#641c24">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXPasswordField>
+                              <JFXTextField fx:id="createdDateTextField" disable="true" editable="false" focusColor="#641c24" labelFloat="true" unFocusColor="#641c24">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <HBox alignment="CENTER">
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <JFXButton fx:id="editButton" buttonType="RAISED" onAction="#handleEditButtonPressed" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #641c24;" text="Edit" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton fx:id="saveButton" buttonType="RAISED" onAction="#handleSaveButtonPressed" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #641c24;" text="Save" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="30.0" right="30.0" top="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton fx:id="exportButton" buttonType="RAISED" onAction="#handleExportButtonPressed" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #641c24;" text="Export" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</Tab>

@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+TransportationSystem.iml
+out/
+src/resources/properties/
+.DS_Store
